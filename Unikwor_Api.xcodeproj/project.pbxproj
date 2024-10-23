@@ -13,6 +13,15 @@
 		23BA65312CC905C3002C2A21 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 23BA65302CC905C3002C2A21 /* Base */; };
 		23BA65332CC905C5002C2A21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23BA65322CC905C5002C2A21 /* Assets.xcassets */; };
 		23BA65362CC905C5002C2A21 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 23BA65352CC905C5002C2A21 /* Base */; };
+		23BA654B2CC90701002C2A21 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BA654A2CC90701002C2A21 /* Data.swift */; };
+		23BA654D2CC907D8002C2A21 /* EndPointTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BA654C2CC907D8002C2A21 /* EndPointTypes.swift */; };
+		23BA65502CC90A58002C2A21 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BA654F2CC90A58002C2A21 /* ApiManager.swift */; };
+		23BA65522CC90CE1002C2A21 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BA65512CC90CE1002C2A21 /* ViewModel.swift */; };
+		23BA65552CC91028002C2A21 /* DataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23BA65542CC91028002C2A21 /* DataTableViewCell.xib */; };
+		23BA65562CC91028002C2A21 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BA65532CC91028002C2A21 /* DataTableViewCell.swift */; };
+		23BA65592CC91B85002C2A21 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 23BA65582CC91B85002C2A21 /* SDWebImage */; };
+		23BA655B2CC91B85002C2A21 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 23BA655A2CC91B85002C2A21 /* SDWebImageMapKit */; };
+		23BA655D2CC91B90002C2A21 /* SdWebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BA655C2CC91B90002C2A21 /* SdWebImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,13 @@
 		23BA65322CC905C5002C2A21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23BA65352CC905C5002C2A21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23BA65372CC905C5002C2A21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23BA654A2CC90701002C2A21 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		23BA654C2CC907D8002C2A21 /* EndPointTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointTypes.swift; sourceTree = "<group>"; };
+		23BA654F2CC90A58002C2A21 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		23BA65512CC90CE1002C2A21 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		23BA65532CC91028002C2A21 /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
+		23BA65542CC91028002C2A21 /* DataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataTableViewCell.xib; sourceTree = "<group>"; };
+		23BA655C2CC91B90002C2A21 /* SdWebImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SdWebImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23BA655B2CC91B85002C2A21 /* SDWebImageMapKit in Frameworks */,
+				23BA65592CC91B85002C2A21 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +74,134 @@
 		23BA65282CC905C3002C2A21 /* Unikwor_Api */ = {
 			isa = PBXGroup;
 			children = (
-				23BA65292CC905C3002C2A21 /* AppDelegate.swift */,
-				23BA652B2CC905C3002C2A21 /* SceneDelegate.swift */,
-				23BA652D2CC905C3002C2A21 /* ViewController.swift */,
-				23BA652F2CC905C3002C2A21 /* Main.storyboard */,
-				23BA65322CC905C5002C2A21 /* Assets.xcassets */,
-				23BA65342CC905C5002C2A21 /* LaunchScreen.storyboard */,
+				23BA65432CC905F6002C2A21 /* Application */,
+				23BA65422CC905EE002C2A21 /* Utilities */,
+				23BA654E2CC90A40002C2A21 /* APIManager */,
+				23BA65412CC905EB002C2A21 /* Helper */,
+				23BA65402CC905E8002C2A21 /* Screens */,
+				23BA653F2CC905E6002C2A21 /* Manager */,
+				23BA653E2CC905DE002C2A21 /* Resources */,
+				23BA653D2CC905D8002C2A21 /* LaunchScreen */,
 				23BA65372CC905C5002C2A21 /* Info.plist */,
 			);
 			path = Unikwor_Api;
+			sourceTree = "<group>";
+		};
+		23BA653D2CC905D8002C2A21 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				23BA65342CC905C5002C2A21 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		23BA653E2CC905DE002C2A21 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				23BA65322CC905C5002C2A21 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		23BA653F2CC905E6002C2A21 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		23BA65402CC905E8002C2A21 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				23BA65472CC906A1002C2A21 /* Model */,
+				23BA65462CC9069E002C2A21 /* View */,
+				23BA65452CC9069C002C2A21 /* ViewModel */,
+				23BA65442CC90699002C2A21 /* Controller */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		23BA65412CC905EB002C2A21 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				23BA655C2CC91B90002C2A21 /* SdWebImage.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		23BA65422CC905EE002C2A21 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				23BA654C2CC907D8002C2A21 /* EndPointTypes.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		23BA65432CC905F6002C2A21 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				23BA65292CC905C3002C2A21 /* AppDelegate.swift */,
+				23BA652B2CC905C3002C2A21 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		23BA65442CC90699002C2A21 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				23BA652D2CC905C3002C2A21 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		23BA65452CC9069C002C2A21 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				23BA65512CC90CE1002C2A21 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		23BA65462CC9069E002C2A21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				23BA65492CC906D6002C2A21 /* Storyboard */,
+				23BA65482CC906C9002C2A21 /* Xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		23BA65472CC906A1002C2A21 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				23BA654A2CC90701002C2A21 /* Data.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		23BA65482CC906C9002C2A21 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				23BA65532CC91028002C2A21 /* DataTableViewCell.swift */,
+				23BA65542CC91028002C2A21 /* DataTableViewCell.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		23BA65492CC906D6002C2A21 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				23BA652F2CC905C3002C2A21 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		23BA654E2CC90A40002C2A21 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				23BA654F2CC90A58002C2A21 /* ApiManager.swift */,
+			);
+			path = APIManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +220,10 @@
 			dependencies = (
 			);
 			name = Unikwor_Api;
+			packageProductDependencies = (
+				23BA65582CC91B85002C2A21 /* SDWebImage */,
+				23BA655A2CC91B85002C2A21 /* SDWebImageMapKit */,
+			);
 			productName = Unikwor_Api;
 			productReference = 23BA65262CC905C3002C2A21 /* Unikwor_Api.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +252,9 @@
 				Base,
 			);
 			mainGroup = 23BA651D2CC905C3002C2A21;
+			packageReferences = (
+				23BA65572CC91B85002C2A21 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 23BA65272CC905C3002C2A21 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,6 +272,7 @@
 				23BA65332CC905C5002C2A21 /* Assets.xcassets in Resources */,
 				23BA65362CC905C5002C2A21 /* Base in Resources */,
 				23BA65312CC905C3002C2A21 /* Base in Resources */,
+				23BA65552CC91028002C2A21 /* DataTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +285,13 @@
 			files = (
 				23BA652E2CC905C3002C2A21 /* ViewController.swift in Sources */,
 				23BA652A2CC905C3002C2A21 /* AppDelegate.swift in Sources */,
+				23BA655D2CC91B90002C2A21 /* SdWebImage.swift in Sources */,
 				23BA652C2CC905C3002C2A21 /* SceneDelegate.swift in Sources */,
+				23BA654D2CC907D8002C2A21 /* EndPointTypes.swift in Sources */,
+				23BA65502CC90A58002C2A21 /* ApiManager.swift in Sources */,
+				23BA654B2CC90701002C2A21 /* Data.swift in Sources */,
+				23BA65522CC90CE1002C2A21 /* ViewModel.swift in Sources */,
+				23BA65562CC91028002C2A21 /* DataTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +512,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		23BA65572CC91B85002C2A21 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.19.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		23BA65582CC91B85002C2A21 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23BA65572CC91B85002C2A21 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		23BA655A2CC91B85002C2A21 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23BA65572CC91B85002C2A21 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 23BA651E2CC905C3002C2A21 /* Project object */;
 }
