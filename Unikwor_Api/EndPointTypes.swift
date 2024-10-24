@@ -23,6 +23,7 @@ protocol EndPointTypes {
 
 enum EndPointItems {
     case data
+    case user
 }
 //https://unikwork.com/instagram/api/get_data.php
 extension EndPointItems: EndPointTypes {
@@ -30,11 +31,13 @@ extension EndPointItems: EndPointTypes {
         switch self {
         case .data:
             return "get_data.php"
+        case .user:
+            return "users"
         }
     }
     
     var baseURL: String {
-        return "https://unikwork.com/instagram/api/"
+        return "https://dummyjson.com/"
     }
     
     var url: URL? {
@@ -44,6 +47,8 @@ extension EndPointItems: EndPointTypes {
     var methods: HTTPMethods {
         switch self {
         case .data:
+            return .get
+        case .user:
             return .get
         }
     }
